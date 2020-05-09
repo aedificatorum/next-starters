@@ -3,10 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-      'palevioletred': '#DB7093'
-      } 
+        palevioletred: '#DB7093',
+      },
     },
   },
   variants: {},
   plugins: [],
-}
+};
