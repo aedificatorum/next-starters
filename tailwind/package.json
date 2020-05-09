@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore . --ext js",
+    "lint:fix": "eslint --ignore-path .gitignore . --ext js --fix",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json}\""
   },
   "dependencies": {
     "next": "9.3.6",

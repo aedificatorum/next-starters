@@ -12,7 +12,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'react', 'prettier'],
+  plugins: ['react', 'prettier'],
 
   extends: [
     'eslint:recommended',
@@ -27,9 +27,8 @@ module.exports = {
   rules: {
     // NextJs does not require you to import React into each component. so suppress errors for missing 'import React' in files.
     'react/react-in-jsx-scope': 'off',
-    'react/display-name': 1,
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
+    // '@typescript-eslint/explicit-function-return-type': 'off',
+    // '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     react: {
