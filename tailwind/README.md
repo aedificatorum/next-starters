@@ -1,7 +1,9 @@
+# Next.js with Tailwind CSS starter
+
 This is a [Next.js] example that you can use with [`create-next-app`][create-next-app]. You'll get a next starter with:
 
 - Tailwind CSS (with Purge CSS)
-- Typescript
+- TypeScript
 - ESLint and Prettier
 
 To get started:
@@ -26,7 +28,23 @@ The stylesheet is imported globally and can be found in `styles\style.css`, and 
 @tailwind utilities;
 ```
 
-### Typescript
+A basic `tailwind.config.js` exists which adds a new theme color, used as an example background color:
+
+```js
+// tailwind.config.js
+theme: {
+  extend: {
+    colors: {
+    'palevioletred': '#DB7093'
+    } 
+  },
+},
+
+// index.js
+<h1 className="bg-palevioletred">...</h1>
+```
+
+### TypeScript
 
 Including examples of both pages (e.g. `index.ts`) and an API route (e.g. `hello.ts`).
 
@@ -34,7 +52,7 @@ The project's `baseUrl` has also been set so you can use [absolute imports].
 
 ### ESLint and Prettier
 
-ESLint is configured with default rulesets for Typescript and react, as well as a Prettier integration (make sure you set your code style in `.prettierrc`).
+ESLint is configured with default rulesets for TypeScript and react, as well as a Prettier integration (make sure you set your code style in `.prettierrc`).
 
 Three new scripts have been added to `package.json` that run eslint/prettier.
 

@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-grow flex-col">
-        <h1 className="title">Site title</h1>
+        <h1 className="p-2 bg-palevioletred">Site title</h1>
       </main>
 
       <footer className="p-2 bg-gray-200">
