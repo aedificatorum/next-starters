@@ -1,30 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js] example that you can use with [`create-next-app`][create-next-app].  You'll get a next starter with:
+- Tailwind CSS (with Purge CSS)
+- Typescript
+- ESLint and Prettier
 
-## Getting Started
-
-First, run the development server:
+To get started:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/master/tailwind
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What got added?
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Tailwind CSS
 
-## Learn More
+A basic install of [Tailwind CSS] with Purge CSS configured to run for production builds (helping you keep your [file size under control]).
 
-To learn more about Next.js, take a look at the following resources:
+The stylesheet is imported globally and can be found in `styles\style.css`, and by default contains:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```css
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+### Typescript
 
-## Deploy on Vercel
+Including examples of both pages (e.g. `index.ts`) and an API route (e.g. `hello.ts`).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The projects `baseUrl` has also been set so you can use [absolute imports].
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### ESLint and Prettier
+
+ESLint is configured with default rulesets for Typescript and react, as well as a Prettier integration (make sure you set your code style in `.prettierrc`).
+
+Three new scripts have been added to `package.json` that run eslint/prettier.
+
+```bash
+yarn format # run prettier and apply rules
+yarn lint # run eslint in report mode
+yarn lint:fix # or run it in fix mode
+```
+
+[Next.js]: https://nextjs.org/
+[create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
+[Tailwind CSS]: https://tailwindcss.com/
+[file size under control]: https://tailwindcss.com/docs/controlling-file-size/
+[absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
