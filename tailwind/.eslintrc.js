@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parser: 'babel-eslint', // "@typescript-eslint/parser" is another option
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -12,23 +12,22 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'prettier'],
 
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:react/recommended',
-    // "airbnb",
-    // "plugin:@typescript-eslint/eslint-recommended",
-    // "plugin:@typescript-eslint/recommended",
     'plugin:prettier/recommended',
-    // "prettier/@typescript-eslint",
+    'prettier/@typescript-eslint',
   ],
 
   rules: {
     // NextJs does not require you to import React into each component. so suppress errors for missing 'import React' in files.
     'react/react-in-jsx-scope': 'off',
-    // '@typescript-eslint/explicit-function-return-type': 'off',
-    // '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     react: {
