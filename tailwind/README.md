@@ -30,7 +30,7 @@ The stylesheet is imported globally and can be found in `styles\style.css`, and 
 
 Including examples of both pages (e.g. `index.ts`) and an API route (e.g. `hello.ts`).
 
-The projects `baseUrl` has also been set so you can use [absolute imports].
+The project's `baseUrl` has also been set so you can use [absolute imports].
 
 ### ESLint and Prettier
 
