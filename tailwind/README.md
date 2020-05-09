@@ -1,4 +1,5 @@
-This is a [Next.js] example that you can use with [`create-next-app`][create-next-app].  You'll get a next starter with:
+This is a [Next.js] example that you can use with [`create-next-app`][create-next-app]. You'll get a next starter with:
+
 - Tailwind CSS (with Purge CSS)
 - Typescript
 - ESLint and Prettier
@@ -43,8 +44,8 @@ yarn lint # run eslint in report mode
 yarn lint:fix # or run it in fix mode
 ```
 
-[Next.js]: https://nextjs.org/
+[next.js]: https://nextjs.org/
 [create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
-[Tailwind CSS]: https://tailwindcss.com/
+[tailwind css]: https://tailwindcss.com/
 [file size under control]: https://tailwindcss.com/docs/controlling-file-size/
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
