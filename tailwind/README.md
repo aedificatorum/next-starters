@@ -59,6 +59,10 @@ yarn lint # run eslint in report mode
 yarn lint:fix # or run it in fix mode
 ```
 
+### VS Code
+
+The workspace has a custom title bar set - see `settings.json` in the `.vscode` folder to update it if you don't like _bg-indigo-500_.
+
 [next.js]: https://nextjs.org/
 [create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
 [tailwind css]: https://tailwindcss.com/
