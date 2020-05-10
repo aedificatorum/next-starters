@@ -2,12 +2,17 @@
 
 This is a [Next.js] example that you can use with [`create-next-app`][create-next-app]. You'll get a next starter with:
 
-- Tailwind CSS 
-  - With Purge CSS, Tailwind UI plugin (including Tailwind Forms), and Inter as the default font
-- TypeScript
-- ESLint and Prettier
+- [Tailwind CSS]
+  - With [Purge CSS], Tailwind UI plugin (which includs Tailwind Forms), and [Inter] as the default font
+- [TypeScript]
+- [ESLint] and [Prettier]
+  - With a pre-commit hook to run [lint-staged] in fix mode
+- A couple of VS Code workspace defaults
+  - Colored title bar
+  - Format on save
+  - [Prettier] as the default formatter
 
-To get started:
+## Get Started
 
 ```bash
 npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/master/tailwind
@@ -17,11 +22,11 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 ### Tailwind CSS
 
-[Tailwind CSS] with Purge CSS configured to run for production builds (helping keep your [file size under control]).
+[Tailwind CSS] with [Purge CSS] configured to run for production builds (helping keep your [file size under control]).
 
 The Tailwind stylesheet (`styles\style.css`) is imported globally (in `_app.js`).
 
-The Tailwind configuration has been extended to include the [@tailwindcss/ui plugin].  In addition to modifying the color palette, it also includes [Tailwind Forms].
+The Tailwind configuration has been extended to include the [@tailwindcss/ui plugin]. In addition to modifying the color palette, it also includes [Tailwind Forms].
 
 The default font has been changed to [Inter], and the font's stylesheet is added to the `<head>` in `_app.js`.
 
@@ -33,13 +38,15 @@ theme: {
   extend: {
     colors: {
     'palevioletred': '#DB7093'
-    } 
+    }
   },
 },
 
 // index.js
 <h1 className="bg-palevioletred">...</h1>
 ```
+
+> You do not need to purchase [Tailwind UI] to use the @tailwindcss/ui plugin. I can highly recommend it though!
 
 ### TypeScript
 
@@ -49,7 +56,7 @@ The project's `baseUrl` has also been set so you can use [absolute imports].
 
 ### ESLint and Prettier
 
-ESLint is configured with default rulesets for TypeScript and react, as well as a Prettier integration (make sure you set your code style in `.prettierrc`).
+ESLint is configured with default rulesets for TypeScript and react, as well as a Prettier integration (make sure you update your code style in `.prettierrc`).
 
 Three new scripts have been added to `package.json` that run eslint/prettier.
 
@@ -59,9 +66,15 @@ yarn lint # run eslint in report mode
 yarn lint:fix # or run it in fix mode
 ```
 
+Pre-commit hooks run `eslint --fix` on all staged files via `[lint-staged]`.
+
 ### VS Code
 
-The workspace has a custom title bar set - see `settings.json` in the `.vscode` folder to update it if you don't like _bg-indigo-500_.
+The workspace has a few default settings (if you don't like them delete/change the `settings.json` file in the `.vscode` folder):
+
+- Custom title bar color
+- Default formatter set to the [Prettier extension][prettier vscode]
+- Format on save
 
 [next.js]: https://nextjs.org/
 [create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
@@ -69,5 +82,12 @@ The workspace has a custom title bar set - see `settings.json` in the `.vscode` 
 [file size under control]: https://tailwindcss.com/docs/controlling-file-size/
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
 [@tailwindcss/ui plugin]: https://tailwindui.com/documentation#how-tailwindcss-ui-extends-tailwind
-[Tailwind Forms]: https://tailwindcss-custom-forms.netlify.app/
-[Inter]: https://rsms.me/inter/
+[tailwind forms]: https://tailwindcss-custom-forms.netlify.app/
+[inter]: https://rsms.me/inter/
+[lint-staged]: https://github.com/okonet/lint-staged
+[prettier vscode]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+[prettier]: https://prettier.io/
+[eslint]: https://eslint.org/
+[typescript]: https://www.typescriptlang.org/
+[purge css]: https://purgecss.com/
+[tailwind ui]: https://tailwindui.com/
