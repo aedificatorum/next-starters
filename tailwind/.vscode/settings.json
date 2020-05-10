@@ -4,5 +4,7 @@
     "titleBar.inactiveForeground": "#374151",
     "titleBar.activeBackground": "#6875f5",
     "titleBar.inactiveBackground": "#b4c6fc"
-  }
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
