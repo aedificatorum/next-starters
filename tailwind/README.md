@@ -2,7 +2,8 @@
 
 This is a [Next.js] example that you can use with [`create-next-app`][create-next-app]. You'll get a next starter with:
 
-- Tailwind CSS (with Purge CSS)
+- Tailwind CSS 
+  - With Purge CSS, Tailwind UI plugin (including Tailwind Forms), and Inter as the default font
 - TypeScript
 - ESLint and Prettier
 
