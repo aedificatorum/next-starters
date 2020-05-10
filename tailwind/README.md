@@ -16,7 +16,7 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 ### Tailwind CSS
 
-A basic install of [Tailwind CSS] with Purge CSS configured to run for production builds (helping you keep your [file size under control]).
+[Tailwind CSS] with Purge CSS configured to run for production builds (helping you keep your [file size under control]).
 
 The stylesheet is imported globally and can be found in `styles\style.css`, and by default contains:
 
@@ -28,7 +28,7 @@ The stylesheet is imported globally and can be found in `styles\style.css`, and 
 @tailwind utilities;
 ```
 
-A basic `tailwind.config.js` exists which adds a new theme color, used as an example background color:
+The configuration file `tailwind.config.js` has an example of extending the color palette, and also brings in the [@tailwindcss/ui plugin].  [Tailwind Forms] are included with the ui plugin.
 
 ```js
 // tailwind.config.js
@@ -67,3 +67,5 @@ yarn lint:fix # or run it in fix mode
 [tailwind css]: https://tailwindcss.com/
 [file size under control]: https://tailwindcss.com/docs/controlling-file-size/
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
+[@tailwindcss/ui plugin]: https://tailwindui.com/documentation#how-tailwindcss-ui-extends-tailwind
+[Tailwind Forms]: https://tailwindcss-custom-forms.netlify.app/
