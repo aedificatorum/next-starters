@@ -16,19 +16,15 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 ### Tailwind CSS
 
-[Tailwind CSS] with Purge CSS configured to run for production builds (helping you keep your [file size under control]).
+[Tailwind CSS] with Purge CSS configured to run for production builds (helping keep your [file size under control]).
 
-The stylesheet is imported globally and can be found in `styles\style.css`, and by default contains:
+The Tailwind stylesheet (`styles\style.css`) is imported globally (in `_app.js`).
 
-```css
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;
-```
+The Tailwind configuration has been extended to include the [@tailwindcss/ui plugin].  In addition to modifying the color palette, it also includes [Tailwind Forms].
 
-The configuration file `tailwind.config.js` has an example of extending the color palette, and also brings in the [@tailwindcss/ui plugin].  [Tailwind Forms] are included with the ui plugin.
+The default font has been changed to [Inter], and the font's stylesheet is added to the `<head>` in `_app.js`.
+
+Finally, an example custom color has been added to the config, along with am example of it being used on the index page.
 
 ```js
 // tailwind.config.js
@@ -69,3 +65,4 @@ yarn lint:fix # or run it in fix mode
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
 [@tailwindcss/ui plugin]: https://tailwindui.com/documentation#how-tailwindcss-ui-extends-tailwind
 [Tailwind Forms]: https://tailwindcss-custom-forms.netlify.app/
+[Inter]: https://rsms.me/inter/
