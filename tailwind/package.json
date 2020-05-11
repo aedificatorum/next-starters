@@ -11,9 +11,9 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,ts,tsx,json}\""
   },
   "dependencies": {
-    "next": "9.3.6",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "^9.4.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
