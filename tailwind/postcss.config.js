@@ -11,7 +11,6 @@ module.exports = {
             ],
             defaultExtractor: (content) =>
               content.match(/[\w-/.:]+(?<!:)/g) || [],
-            whitelistPatterns: [/rc-slider/],
           },
         ]
       : undefined,
