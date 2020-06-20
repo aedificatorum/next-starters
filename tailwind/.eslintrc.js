@@ -26,8 +26,6 @@ module.exports = {
   rules: {
     // NextJs does not require you to import React into each component. so suppress errors for missing 'import React' in files.
     'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
   },
   settings: {
     react: {
