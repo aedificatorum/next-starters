@@ -1,5 +1,5 @@
-# Todo
+Create-next-app with:
 
-- Add prettier
-- Add eslint
-- Verify production build
+- Tailwincd CSS (with tailwindui plugin and Inter font)
+- Prettier
+- ESLint
