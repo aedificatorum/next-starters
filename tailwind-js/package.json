@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,md}\""
   },
   "dependencies": {
     "next": "9.4.4",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@tailwindcss/ui": "^0.3.0",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
     "tailwindcss": "^1.4.6"
   }
 }
