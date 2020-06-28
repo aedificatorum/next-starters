@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
     </>
