@@ -12,4 +12,7 @@ module.exports = {
   },
   variants: {},
   plugins: [require('@tailwindcss/ui')],
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 };
