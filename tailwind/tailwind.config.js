@@ -15,7 +15,4 @@ module.exports = {
   },
   variants: {},
   plugins: [require('@tailwindcss/forms')],
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
 };
