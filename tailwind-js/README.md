@@ -1,6 +1,6 @@
 Create-next-app with:
 
-- Tailwincd CSS (with tailwindui plugin and Inter font)
+- Tailwincd CSS (with tailwind forms plugin and Inter font)
 - Prettier
 - ESLint with a minimal ruleset
 
