@@ -9,13 +9,10 @@ module.exports = {
         palevioletred: '#DB7093',
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/ui')],
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
+  plugins: [require('@tailwindcss/forms')],
 };

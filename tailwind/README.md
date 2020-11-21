@@ -26,7 +26,7 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 The Tailwind stylesheet (`styles\style.css`) is imported globally (in `_app.js`).
 
-The Tailwind configuration has been extended to include the [@tailwindcss/ui plugin]. In addition to modifying the color palette, it also includes [Tailwind Forms].
+The Tailwind configuration has been extended to include [Tailwind Forms].
 
 The default font has been changed to [Inter], and the font's stylesheet is added to the `<head>` in `_app.js`.
 
@@ -45,8 +45,6 @@ theme: {
 // index.js
 <h1 className="bg-palevioletred">...</h1>
 ```
-
-> You do not need to purchase [Tailwind UI] to use the @tailwindcss/ui plugin. I can highly recommend it though!
 
 ### TypeScript
 
@@ -90,4 +88,3 @@ The workspace has a few default settings (if you don't like them delete/change t
 [eslint]: https://eslint.org/
 [typescript]: https://www.typescriptlang.org/
 [purge css]: https://purgecss.com/
-[tailwind ui]: https://tailwindui.com/
