@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('@tailwindcss/ui')],
+  plugins: [require('@tailwindcss/forms')],
   future: {
     removeDeprecatedGapUtilities: true,
   },
