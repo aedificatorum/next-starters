@@ -3,10 +3,9 @@
 This is a [Next.js] example that you can use with [`create-next-app`][create-next-app]. You'll get a next starter with:
 
 - [Tailwind CSS]
-  - With [Purge CSS], Tailwind UI plugin (which includs Tailwind Forms), and [Inter] as the default font
+  - With [Tailwind Forms], and [Inter] as the default font
 - [TypeScript]
 - [ESLint] and [Prettier]
-  - With a pre-commit hook to run [lint-staged] in fix mode
 - A couple of VS Code workspace defaults
   - Colored title bar
   - Format on save
@@ -75,14 +74,10 @@ The workspace has a few default settings (if you don't like them delete/change t
 [next.js]: https://nextjs.org/
 [create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
 [tailwind css]: https://tailwindcss.com/
-[file size under control]: https://tailwindcss.com/docs/controlling-file-size/
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
-[@tailwindcss/ui plugin]: https://tailwindui.com/documentation#how-tailwindcss-ui-extends-tailwind
 [tailwind forms]: https://tailwindcss-custom-forms.netlify.app/
 [inter]: https://rsms.me/inter/
-[lint-staged]: https://github.com/okonet/lint-staged
 [prettier vscode]: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 [prettier]: https://prettier.io/
 [eslint]: https://eslint.org/
 [typescript]: https://www.typescriptlang.org/
-[purge css]: https://purgecss.com/
