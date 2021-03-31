@@ -24,7 +24,7 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 [Tailwind CSS] with [Purge CSS] configured to run for production builds (helping keep your [file size under control]).
 
-The Tailwind stylesheet (`styles\style.css`) is imported globally (in `_app.js`).
+The Tailwind stylesheet (`tailwind\tailwind.css`) is imported globally (in `_app.js`).
 
 The Tailwind configuration has been extended to include [Tailwind Forms].
 
@@ -63,8 +63,6 @@ yarn format # run prettier and apply rules
 yarn lint # run eslint in report mode
 yarn lint:fix # or run it in fix mode
 ```
-
-Pre-commit hooks run `eslint --fix` on all staged files via `[lint-staged]`.
 
 ### VS Code
 
