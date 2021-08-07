@@ -9,5 +9,5 @@ Optimized for quick exploration of ideas.
 To use:
 
 ```bash
-npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/master/tailwind-js
+npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/main/tailwind-js
 ```
