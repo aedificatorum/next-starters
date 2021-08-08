@@ -21,7 +21,7 @@ npx create-next-app your-app-name --example https://github.com/aedificatorum/nex
 
 ### Tailwind CSS
 
-[Tailwind CSS] with [Purge CSS] configured to run for production builds (helping keep your [file size under control]).
+[Tailwind CSS] configured with [JIT mode].
 
 The Tailwind stylesheet (`tailwind\tailwind.css`) is imported globally (in `_app.js`).
 
@@ -74,6 +74,7 @@ The workspace has a few default settings (if you don't like them delete/change t
 [next.js]: https://nextjs.org/
 [create-next-app]: https://github.com/zeit/next.js/tree/canary/packages/create-next-app.
 [tailwind css]: https://tailwindcss.com/
+[jit mode]: https://tailwindcss.com/docs/just-in-time-mode
 [absolute imports]: https://tjaddison.com/blog/2020/04/absolute-imports-with-react/
 [tailwind forms]: https://tailwindcss-custom-forms.netlify.app/
 [inter]: https://rsms.me/inter/
