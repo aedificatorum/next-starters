@@ -53,7 +53,7 @@ The project's `baseUrl` has also been set so you can use [absolute imports].
 
 ### ESLint and Prettier
 
-ESLint is configured with default rulesets for TypeScript and react, as well as a Prettier integration (make sure you update your code style in `.prettierrc`).
+ESLint is configured with Next's strict ruleset, as well as a Prettier integration (make sure you update your code style in `.prettierrc`).
 
 Three new scripts have been added to `package.json` that run eslint/prettier.
 
