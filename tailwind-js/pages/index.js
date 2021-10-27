@@ -7,7 +7,7 @@ export default function Home() {
         <title>Create Next App</title>
       </Head>
 
-      <main>Site content goes here.</main>
+      <main className="bg-gray-500 text-2xl">Site content goes here.</main>
     </div>
   );
 }

@@ -5,7 +5,7 @@ This is a [Next.js] example that you can use with [`create-next-app`][create-nex
 - [Tailwind CSS]
   - With [Tailwind Forms], and [Inter] as the default font
 - [TypeScript]
-- [Prettier]
+- [ESLint] and [Prettier]
 - A couple of VS Code workspace defaults
   - Colored title bar
   - Format on save
