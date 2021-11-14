@@ -14,7 +14,7 @@ This is a [Next.js] example that you can use with [`create-next-app`][create-nex
 ## Get Started
 
 ```bash
-npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/master/tailwind
+npx create-next-app your-app-name --example https://github.com/aedificatorum/next-starters/tree/main/tailwind
 ```
 
 ## What got added?
